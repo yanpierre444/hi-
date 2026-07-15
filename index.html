@@ -31,7 +31,9 @@
     <p id="mensagem">Bem-vindo ao jogo!</p>
 
     <h2>Golos de Portugal: <span id="numero-golos">0</span></h2> <!-- Botões HTML que chamam as funções JavaScript -->
-   
+
+    <button class="botao" onclick="modoEscuro">night/light</button>
+
     <button class="botao" onclick="animarjogo">Animar Torcida</button>
 
     <button class="botao" onclick="mostrarAlerta()">Aviso</button>
@@ -60,6 +62,11 @@
 
     function acabarjogo() {            
         alert("O jogo terminou! Grande partida!")
+     }
+
+     function modoEscuro() {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
      }
 
     </script>
