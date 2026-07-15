@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundial 2026</title>
+
+    <style>
+        body {
+            background-color: #e0f7fa;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #8b0000;
+        }
+
+        .botao {
+            background-color: #006600;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body> Página 1 <h1>Mundial 2026</h1>
+    <p id="mensagem">Bem-vindo ao jogo!</p>
+
+    <h2>Golos de Portugal: <span id="numero-golos">0</span></h2> <!-- Botões HTML que chamam as funções JavaScript -->
+   
+    <button class="botao" onclick="animarjogo">Animar Torcida</button>
+
+    <button class="botao" onclick="mostrarAlerta()">Aviso</button>
+
+    <button class="botao" onclick="marcarGolo()">Golo!</button>
+
+    <button class="botao" onclick="acabarjogo()">Fim de jogo!</button>
+
+    <script> // Variável para guardar os golos var
+
+    function animarjogo() {
+        document.getElementById("mensagem").innerHTML
+        alert("Força Portugal! Rumo à vitória");
+    }
+
+    totalGolos = 0; // Função 1: Mostra uma janela pop-up 
+
+    function mostrarAlerta() {
+        alert("O jogo vai começar!");       
+     } // Função 2: Aumenta o número de golos no ecrã
+
+    function marcarGolo() {            
+    totalGolos = totalGolos + 1;
+    document.getElementById("numero-golos").innerHTML = totalGolos;
+     }
+
+    function acabarjogo() {            
+        alert("O jogo terminou! Grande partida!")
+     }
+
+    </script>
+</body>
+
+</html>
